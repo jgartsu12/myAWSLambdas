@@ -1,5 +1,4 @@
 # AWSBootcamplastAgentUpdate
-
 import json
 import boto3
 import os
@@ -15,7 +14,7 @@ def lambda_handler(event, context):
     lastAgent = event['Details']['ContactData']['Attributes']['lastAgent']
 
     # cs lookup to DynamoDB via customer phonenumber
-    table = ddb.Table(tableName) #T in Table need to capitlizaed
+    table = ddb.Table(tableName) #configured in aws
     response = table.get_item(Key={'phoneNumber': phoneNumber})
 
     # if record exists, write these values to variables
@@ -36,3 +35,5 @@ def lambda_handler(event, context):
             }
         )
         return {'message': 'added'}
+        
+#  needed permission to put_item in ddb, added in IAM
