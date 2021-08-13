@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     lastAgent = event['Details']['ContactData']['Attributes']['lastAgent']
 
     # cs lookup to DynamoDB via customer phonenumber
-    table = ddb.table(tableName) #configured in aws
+    table = ddb.Table(tableName) #T in Table need to capitlizaed
     response = table.get_item(Key={'phoneNumber': phoneNumber})
 
     # if record exists, write these values to variables

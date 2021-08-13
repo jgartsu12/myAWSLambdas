@@ -59,3 +59,11 @@ def lambda_handler(event, context):
     # if there is not a match, return this default message
     else:
         return {'message':'Fail'} 
+
+'''
+error in env var in lambda service:
+errorMessage": "An error occurred (ValidationException) when calling the GetItem operation: 1 validation error detected: Value ' AWSBootCamp' at 'tableName' failed to satisfy constraint: Member must satisfy regular expression pattern: [a-zA-Z0-9_.-]+",
+  "errorType": "ClientError",
+
+** space before AWSBootCamp in env var
+'''
