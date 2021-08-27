@@ -69,10 +69,10 @@ def lambda_handler(event,context):
     # create ticket in zdesk w/ ddb and lexbot values
     SSM_CLIENT = boto3.client('ssm')
     zd_secret = SSM_CLIENT.get_parameter(
-        Name='ssm_secret_key_name',
+        Name='zendesk_secret_key',
         WithDecryption=True
     )['Parameter']['Value']
-    zendesk = Zendesk('cozendeskurl', 'zendesk_user_email', zd_secret, True)
+    zendesk = Zendesk('https://abcisp.zendesk.com/', 'jgartsu12@gmail.com', zd_secret, True)
     new_ticket = {
         'ticket': {
             'requester': {

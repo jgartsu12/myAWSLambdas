@@ -1,0 +1,24 @@
+{
+    "WebSiteHelper": {
+        "lambda": {
+            "RequestType": "Create",
+            "ServiceToken": "arn:aws:lambda:us-west-2:613787477748:function:tt6-CustomResourceHelper-1XD7H79YEPR63",
+            "ResponseURL": "https://cloudformation-custom-resource-response-uswest2.s3-us-west-2.amazonaws.com/arn%3Aaws%3Acloudformation%3Aus-west-2%3A613787477748%3Astack/tt6/83b496d0-7cc6-11e9-bb3d-0211d8bec7e2%7CConfigureWebsite%7C1b1fc3cb-54ab-43dc-81ff-b500636e43b9?AWSAccessKeyId=AKIA54RCMT6SLQS62F5U&Expires=1558560382&Signature=GX0E0G%2BENZm4Z%2F%2Fr779wOFcCZL8%3D",
+            "StackId": "arn:aws:cloudformation:us-west-2:613787477748:stack/tt6/83b496d0-7cc6-11e9-bb3d-0211d8bec7e2",
+            "RequestId": "1b1fc3cb-54ab-43dc-81ff-b500636e43b9",
+            "LogicalResourceId": "ConfigureWebsite",
+            "ResourceType": "Custom::LoadLambda",
+            "ResourceProperties": {
+                "ServiceToken": "arn:aws:lambda:us-west-2:613787477748:function:tt6-CustomResourceHelper-1XD7H79YEPR63",
+                "data": "Yes",
+                "destS3KeyPrefix": "agentextensions",
+                "sourceS3key": "agentextensions/latest/website",
+                "customAction": "configureWebsite",
+                "destS3Bucket": "amz-tools-test",
+                "Region": "us-east-1",
+                "sourceS3Bucket": "accp-2019",
+                "solutionId": "SO0054"
+            }
+        }
+    }
+}
