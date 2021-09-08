@@ -1,0 +1,30 @@
+ {  
+           "Name":"ContactFlowExecution",
+           "Details":{  
+              "Parameters":{},
+              "ContactData":{  
+                 "ContactId":"ASDAcxcasDFSSDFs",
+                 "InitialContactId":"Acxsada-asdasdaxA",
+                 "PreviousContactId":"Acxsada-asdasdaxA",
+                 "Channel":"Voice",
+                 "InstanceARN":"",
+                 "InitiationMethod":"INBOUND/OUTBOUND/TRANSFER/CALLBACK",
+                 "SystemEndpoint":{  
+                    "Type":"TELEPHONE_NUMBER",
+                    "Address":"01234567"
+                 },
+                 "CustomerEndpoint":{  
+                    "Type":"TELEPHONE_NUMBER",
+                    "Address":"+14805551212"
+                 },
+                 "Queue":{  
+                    "Name":"PrimaryPhoneQueue",
+                    "ARN":""
+                 },
+                 "Attributes":{  
+                    "destinationNumber":"+14805551212",
+                    "messageContent":"testing 123."
+                 }
+        }
+    }
+}

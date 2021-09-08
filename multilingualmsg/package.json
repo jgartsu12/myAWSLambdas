@@ -1,0 +1,12 @@
+{
+    "name": "multiligualflows",
+    "version": "1.0.0",
+    "description": "Serverless Code to retrieve multilingual message sets from data store",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Parind Poi",
+    "license": "ISC"
+}
+  
